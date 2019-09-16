@@ -22,14 +22,20 @@ body {
   height: 100vh;
   margin: 0 auto;
 }
-.login-txt {
+.lead {
+  margin-bottom: 1rem;
+  border: 0.1rem solid #009da4;
+  border-radius: 30px;
+  width: 7rem;
   font-family: Open Sans;
   font-size: 20px;
   line-height: 27px;
   color: #009da4;
   display: block;
-  margin-left: -7rem;
+  text-align: center;
+  cursor: pointer;
 }
+
 .form label {
   position: relative;
   display: block;
