@@ -64,7 +64,6 @@ input {
   outline: none;
   width: 405px;
   height: 50px;
-  left:921px;
   font-size: 20px;
 }
 #login1 {
@@ -89,6 +88,15 @@ input {
   font-size: 20px;
   line-height: 27px;
   color: #A79E9E
+}
+
+.forgot a {
+  text-decoration: none;
+  color: #A79E9E;
+}
+
+.forgot a:hover {
+  text-decoration: underline;
 }
 /*This class is added by javascript 
 when the password reaches the user icons*/
