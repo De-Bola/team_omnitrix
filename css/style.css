@@ -27,9 +27,10 @@ body {
   border: 0.1rem solid #009da4;
   border-radius: 30px;
   width: 141px;
+  height: 60px;
   font-family: Open Sans;
   font-size: 20px;
-  line-height: 27px;
+  line-height: 50px;
   color: #009da4;
   display: block;
   text-align: center;
@@ -69,10 +70,11 @@ input {
 #login1 {
   border: 2px solid;
   color: white;
+  border-radius: 30px;
   background-color: #009da4;
   font-size: 20px;
   font-family: open sans;
-  line-height: 27px; 
+  line-height: 27px;
 }
 
 #login1:hover {
@@ -98,9 +100,22 @@ input {
 .forgot a:hover {
   text-decoration: underline;
 }
-/*This class is added by javascript 
+/*This class is added by javascript
 when the password reaches the user icons*/
 .fadeOff {
   color: rgba(255, 239, 239, 0.6);
 }
 /*End of Form Container*/
+
+
+.image {
+  width: inherit;
+  height: inherit;
+}
+
+.copyright {
+  position: relative;
+  bottom: 0;
+}
+
+
