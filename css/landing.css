@@ -1,0 +1,32 @@
+
+ .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .white{
+        color:white;
+      }
+      hr{
+        width:7%;
+        height:20%;
+        background:white;
+      }
+      .welcome{
+        margin-top:120px;
+      }
+      .footer_new{
+         margin-top:200px;
+      }
+      .bg{
+        background:url(https://technosoftacademy.io/wp-content/uploads/2018/08/codeing-bootcamp-banner-1.png), rgba(26, 23, 23, 0.89);
+      }
