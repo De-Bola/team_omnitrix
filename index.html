@@ -9,43 +9,77 @@
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Omnitrix</title>
 </head>
 
-<body>
-    <div class="container">
-        <!-- #region
-                <div class="login-image">
-                </div>
-        -->
+<body >
+    <div class="container-fluid">
+        <div class="row pt-3">
+            <div class="col-sm-12">
+                <img src="https://res.cloudinary.com/dmn1bwvq2/image/upload/v1568643060/Omnitrix_logo_zb0klo.png" alt="Omnitrix_logo_zb0klo">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                 <div class="row">
+            <div class="col-sm-12 col-md-6 float-md-left text-centre">
+                <img class="image" src="https://res.cloudinary.com/dmn1bwvq2/image/upload/v1568642992/Man_on_surfboard_laogbn.png" alt="">
+            </div>
+                    <div class="col-sm-12 col-md-6 d-block float-md-right text-centre">
+                        <h3 class="login-txt">Login</h3>
+
+                    <form action="" method="">
+                        <label for="username">
+                            <input type="text" name="username" id="username input" placeholder="Username">
+                            <i class="fa fa-user"></i>
+                        </label>
+
+                        <label for="password">
+                            <input type="password" name="password" id="password input" placeholder="Password">
+                            <i class="fas fa-user-lock"></i>
+                        </label>
+                        </br>
+                        <label for="login">
+                            <button type="submit" name="login" id="login1" class="lead"><a style="text-decoration:none;color:white;" href="landing.html">Login</button>
+                            <i class="fas fa-user-lock"></i>
+                        </label>
+                            <label for="signup">
+                            <button type="submit" name="sign_up" id="login1" class="lead"><a style="text-decoration:none;color:white;" href="signup.html">Signup</button>
+                            <i class="fas fa-user-lock"></i>
+                        </label>
+                        <div>
+                            <p class="forgot">Forgot <a class="" href="#">Username/Password?</a></p>
+                        </div>
+
+
+                    </form>
+                    </div>
+        </div>
+            </div>
+
+        </div>
+</div>
+<div class="row mb-0 copyright">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6 ">
+        <p> &copy 2019 Team Omnitrix. All rights reserved</p>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+
+
+            <!--
+        </div> -->
+
 
         <!--Login Form-->
-        <div class="form form-control">
+        <!-- <div class="form form-control">
             <div class="lead">
-                <h3 class="login-txt">Login</h3>
             </div>
-            <form action="index.php">
-                <label for="username">
-                    <input type="text" name="username" id="username input" placeholder="Username">
-                    <i class="fa fa-user"></i>
-                </label>
-
-                <label for="password">
-                    <input type="password" name="password" id="password input" placeholder="Password">
-                    <i class="fas fa-user-lock"></i>
-                </label>
-                <br>
-                <br>
-                
-                <label for="login">
-                    <input type="button" name="login" id="login1" value="LOGIN">
-                    <i class="fas fa-user-lock"></i>
-                </label>
-                <p class="forgot">Forgot <a href="#">Username/Password?</a></p>
-
-            </form>
-        </div>
-    </div>
+             </div>
+    </div> -->
     <!--End Login Form-->
 
     <script src="js/main.js"></script>
