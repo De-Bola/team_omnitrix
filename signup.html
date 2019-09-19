@@ -35,43 +35,52 @@
                 <form method="POST" action="index.php">
                     <div class="form-grid">
                         <div class="form-grid1">
+
                             <label for="username">
-                                <input type="text" name="username" id="username input" placeholder="Username">
+                                <input type="text" name="username" id="username" placeholder="Username">
                                 <i class="far fa-user"></i>
+                                <small id="alert-username"></small>
                             </label>
 
+
                             <label for="email">
-                                <input type="email" name="email" id="email input" placeholder="Email">
+                                <input type="email" name="email" id="email" placeholder="Email">
                                 <i class="far fa-envelope"></i>
+                                <small id="alert-email"></small>
                             </label>
 
                             <label for="password">
-                                <input type="password" name="password" id="password input" placeholder="Password">
+                                <input type="password" name="password" id="password" placeholder="Password">
                                 <i class="fas fa-lock"></i>
+                                <small id="alert-password"></small>
                             </label>
                         </div>
                         <div class="form-grid2">
                             <label for="name">
-                                <input type="text" name="name" id="name input" placeholder="Full Name">
+                                <input type="text" name="name" id="fullname" placeholder="Full Name">
                                 <i class="far fa-user"></i>
+                                <small id="alert-full-name"></small>
                             </label>
 
                             <label for="tel">
-                                <input type="tel" name="tel" id="tel input" placeholder="Mobile Number">
+                                <input type="tel" name="tel" id="number" placeholder="Mobile Number">
                                 <i class="fas fa-phone-square"></i>
+                                <small id="alert-numbers"></small>
                             </label>
 
                             <label for="con-password">
-                                <input type="password" name="password" id="con-password" input"
+                                <input type="password" name="password" id="confirm-password" input"
                                     placeholder="Confirm Password">
                                 <i class="fas fa-lock"></i>
+                                <small id="alert-confirm-password"></small>
                             </label>
                         </div>
                     </div>
                     <div class="flex-btn">
                         <div class="signup">
                             <label for="signup">
-                                <button type="submit" name="signup" id="signup"><a style="text-decoration:none;color:white;" href="landing.html">Sign Up</button>
+                                <button type="submit" name="signup" id="signup"><a
+                                        style="text-decoration:none;color:white;" href="landing.html">Sign Up</button>
                                 <i class="fas fa-sign-in-alt"></i>
                             </label>
 
@@ -85,7 +94,7 @@
         </div>
         <footer>&copy2019 <span class="blue">Team Omnitrix.</span> All Rights Reserved.</footer>
     </div>
-    <script src="js/main.js"></script>
+    <script src="js/signup.js"></script>
 </body>
 
 </html>
