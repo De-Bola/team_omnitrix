@@ -8,78 +8,78 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Omnitrix</title>
 </head>
 
-<body >
+<body>
     <div class="container-fluid">
-        <div class="row pt-3">
-            <div class="col-sm-12">
-                <img src="https://res.cloudinary.com/dmn1bwvq2/image/upload/v1568643060/Omnitrix_logo_zb0klo.png" alt="Omnitrix_logo_zb0klo">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                 <div class="row">
-            <div class="col-sm-12 col-md-6 float-md-left text-centre">
-                <img class="image" src="https://res.cloudinary.com/dmn1bwvq2/image/upload/v1568642992/Man_on_surfboard_laogbn.png" alt="">
-            </div>
-                    <div class="col-sm-12 col-md-6 d-block float-md-right text-centre">
-                        <h3 class="login-txt">Login</h3>
-
-                    <form action="" method="">
-                        <label for="username">
-                            <input type="text" name="username" id="username input" placeholder="Username">
-                            <i class="fa fa-user"></i>
-                        </label>
-
-                        <label for="password">
-                            <input type="password" name="password" id="password input" placeholder="Password">
-                            <i class="fas fa-user-lock"></i>
-                        </label>
-                        </br>
-                        <label for="login">
-                            <button type="submit" name="login" id="login1" class="lead" >Login</button>
-                            <i class="fas fa-user-lock"></i>
-                        </label>
-                        <div>
-                            <p class="forgot">Forgot <a class="" href="#">Username/Password?</a></p>
-                        </div>
-
-
-                    </form>
-                    </div>
-        </div>
-            </div>
-
-        </div>
-</div>
-<div class="row mb-0 copyright">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6 ">
-        <p> &copy 2019 Team Omnitrix. All rights reserved</p>
+        <header class="header row">
+    <div class="logo col-sm-12 col-md-2">
+        <img class="logo"
+            src="https://res.cloudinary.com/hng-pre-internship/image/upload/v1568738419/Signup/Group_3_wtbfzg.png"
+            alt="logo">
     </div>
-    <div class="col-sm-3"></div>
-</div>
+</header>
 
+        <div class="row mt-5">
+            <div class="col-12 mt-5">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-sm-12 col-md-4 float-md-left ">
+                        <img class="image text-centre"
+                            src="https://res.cloudinary.com/dmn1bwvq2/image/upload/v1568642992/Man_on_surfboard_laogbn.png"
+                            alt="">
+                    </div>
+                    <div class="col-sm-12 col-md-5 d-block float-md-right ">
+                        <small id="alert-incomplete"></small>
+                        <form action="" method="" class="text-center" >
+                            <h1 class="">Login</h1>
+                            <div class="text-center">
+                            <label for="username">
+                                <input type="text" name="username" id="username" placeholder="Username" >
+                                <i class="far fa-user"></i>
+                                <small id="alert-username"></small>
+                            </label>
 
-            <!--
-        </div> -->
-
-
-        <!--Login Form-->
-        <!-- <div class="form form-control">
-            <div class="lead">
+                            <label for="password">
+                                <input type="password" name="password" id="password" placeholder="Password">
+                                <i class="fas fa-lock"></i>
+                                <small id="alert-password"></small>
+                            </label>
+                            </br>
+                            <div class="">
+                            <label for="login">
+                                <button type="submit" name="login" id="login1" class="lead">
+                                    <a style="text-decoration:none;color:white;" href="landing.html">Login
+                                        <i class="fas fa-sign-in-alt" style="text-decoration:none; width:10px; height:10px;color:white;"></i>
+                                    </a>
+                                </button>
+                            </label>
+                        </div>
+                        </div>
+                            <div class="text-center">
+                                <p class="forgot">Forgot <a class="" href="#">Username/Password?</a></p>
+                                <p class="forgot">New to Omnitrix? <a href="signup.html">Sign Up here</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-                <br>
-                <br>
 
         </div>
-    </div> -->
-    <!--End Login Form-->
+    </div>
+            <footer class="row mb-0 copyright" >
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 footer ">
+                <p>&copy2019 <span class="blue">Team Omnitrix.</span> All Rights Reserved.</p>
+            </div>
+            <div class="col-sm-4"></div>
+            </footer>
+
+
+
 
     <script src="js/main.js"></script>
 </body>
