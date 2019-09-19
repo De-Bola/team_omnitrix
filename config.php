@@ -1,7 +1,6 @@
 <?php
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-//mysql://ba36cf7b289e0a:c8385c30@us-cdbr-iron-east-02.cleardb.net/heroku_f624638ced613be?reconnect=true
 //mysql://b062478d1a3650:b001748f@us-cdbr-iron-east-02.cleardb.net/heroku_0c1823c70ba370e?reconnect=true
 define('DB_SERVER', 'us-cdbr-iron-east-02.cleardb.net');
 define('DB_USERNAME', 'b062478d1a3650');
