@@ -234,7 +234,6 @@ input {
 #prompt a:hover {
   text-decoration: underline;
 }
-
 /*This class is added by javascript
 when the password reaches the user icons*/
 .fadeOff {
@@ -242,7 +241,6 @@ when the password reaches the user icons*/
 }
 
 /*footer starts*/
-
 footer {
   position: fixed;
   bottom: 0;
