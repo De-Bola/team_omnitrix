@@ -10,11 +10,10 @@ $name= $_POST['username'];
 $pass= $_POST['apassword'];
 $pass2= $_POST['cpassword'];
 
+//mysql://b062478d1a3650:b001748f@us-cdbr-iron-east-02.cleardb.net/heroku_0c1823c70ba370e?reconnect=true
 
-
-$con= mysqli_connect('localhost', 'root', '');
+$con= mysqli_connect('us-cdbr-iron-east-02.cleardb.net', 'b062478d1a3650', 'b001748f');
 mysqli_select_db( $con,'Omnitrix_Userdata');
-
 
 $user = mysqli_query( $con,("SELECT * FROM user WHERE username = '$name'"));
 $mail = mysqli_query( $con,("SELECT * FROM user WHERE email = '$email'"));
@@ -23,10 +22,7 @@ $tel = mysqli_query( $con,("SELECT * FROM user WHERE mobileno = '$mobile'"));
 $num = mysqli_num_rows($user);
 $num2 = mysqli_num_rows($mail);
 $num3= mysqli_num_rows($tel);
-
-
-            
-            
+           
     if ($pass==$pass2 && $num==0 && $num2==0 && $num3==0)
     
     {
