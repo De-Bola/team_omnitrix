@@ -28,7 +28,7 @@ $num3= mysqli_num_rows($tel);
     {
        mysqli_query($con,("INSERT INTO user(fullname, email, mobileno, username, apassword, cpassword) VALUES 
     ('$fullname', '$email', '$mobile', '$name','$pass','$pass2')"));
-         header('location:landing.php');
+         header('location:landing.html');
     }
          elseif ($num==1) {
 
