@@ -6,7 +6,7 @@ define('DB_SERVER', 'us-cdbr-iron-east-02.cleardb.net');
 define('DB_USERNAME', 'b062478d1a3650');
 define('DB_PASSWORD', 'b001748f');
 define('DB_NAME', 'heroku_0c1823c70ba370e');
-define('DB_DRIVER', 'myspli');
+define('DB_DRIVER', 'mysqli');
  
 /* Attempt to connect to MySQL database */
 $link = mysqli_connect('us-cdbr-iron-east-02.cleardb.net', 'b062478d1a3650', 'b001748f', 'heroku_0c1823c70ba370e');
