@@ -1,32 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  font-family: "Dosis", sans-serif;
+  background: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden !important;
+  overflow-x: hidden !important;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+img {
+  display: block;
+}
 
- .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
+/*Header Starts*/
+.header {
+  box-shadow: 0px 4px 2px -0.005 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-      .white{
-        color:white;
-      }
-      hr{
-        width:7%;
-        height:20%;
-        background:white;
-      }
-      .welcome{
-        margin-top:120px;
-      }
-      .footer_new{
-         margin-top:200px;
-      }
-      .bg{
-        background:url(https://technosoftacademy.io/wp-content/uploads/2018/08/codeing-bootcamp-banner-1.png), rgba(26, 23, 23, 0.89);
-      }
+#blue {
+  color: #009da4;
+}
+li {
+  list-style: none;
+}
+
+/*NavBar*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 4rem;
+  opacity: 0.9;
+  font-size: 51px;
+}
+
+.navbar a {
+  color: #0a0a0a;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: #0a0a0a;
+}
+
+header ul li {
+  background: #009da4;
+  box-shadow: 0px 4px 10px rgba(231, 116, 116, 0.55);
+  border-radius: 40px;
+  color: #ffffff !important;
+  width: 15rem;
+  text-align: center;
+}
+header ul li a {
+  color: #ffffff !important;
+}
+
+.top-bg {
+  position: absolute;
+  background-repeat: no-repeat !important;
+  z-index: -1;
+  right: 0;
+}
+
+.flex {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.flex .middle-img {
+  display: block;
+  position: absolute;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+#prompt {
+  float: right;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  font-size: 4rem;
+  line-height: 41px;
+  cursor: pointer;
+  color: #009da4;
+}
+
+#prompt a {
+  color: #009da4;
+}
+/*MEDIA QUERIES  STARTS*/
+@media screen and (min-width: 48rem) {
+  body {
+    overflow-x: hidden;
+  }
+  .flex .middle-img img {
+    position: relative;
+    width: 20rem;
+    top: 15rem;
+  }
+
+  header h1,
+  li,
+  #prompt {
+    font-size: 2.5rem;
+  }
+  header ul {
+    width: 15rem;
+  }
+  .top-bg {
+    right: 0;
+    margin-right: 0 !important;
+  }
+
+  #prompt {
+    bottom: 10rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  header h1,
+  li,
+  #prompt {
+    font-size: 2rem;
+  }
+  header ul {
+    width: 9rem;
+  }
+  .top-bg {
+    right: 0;
+    margin-right: 0 !important;
+  }
+
+  #prompt {
+    bottom: 10rem;
+    left: 10.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+  .header {
+    top: 2rem;
+  }
+  header ul li {
+    width: 10rem;
+  }
+  header h1,
+  li,
+  #prompt {
+    bottom: 5rem;
+    font-size: 0.8rem;
+  }
+  header ul {
+    width: 9rem;
+  }
+  .top-bg {
+    right: 0;
+    margin-right: 0 !important;
+  }
+  .inner-wrapper #flex {
+    margin-top: 17rem;
+  }
+
+  #flex img {
+    width: 15rem;
+  }
+
+  #prompt {
+    bottom: 10rem;
+    left: 10rem;
+  }
+}
+/*MEDIA QUERIES  ENDS*/
