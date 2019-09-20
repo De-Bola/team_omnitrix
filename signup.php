@@ -1,3 +1,7 @@
+<?php
+//require_once "config.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,55 +36,46 @@
 
             <div class="form-wrapper">
                 <h1 class="lead">Create Account</h1>
-                <form method="POST" action="index.php">
+                <form method="post" action="registration.php">
                     <div class="form-grid">
                         <div class="form-grid1">
-
                             <label for="username">
-                                <input type="text" name="username" id="username" placeholder="Username">
+                                <input type="text" name="username" id="username input" placeholder="Username">
                                 <i class="far fa-user"></i>
-                                <small id="alert-username"></small>
                             </label>
 
-
                             <label for="email">
-                                <input type="email" name="email" id="email" placeholder="Email">
+                                <input type="email" name="email" id="email input" placeholder="Email">
                                 <i class="far fa-envelope"></i>
-                                <small id="alert-email"></small>
                             </label>
 
                             <label for="password">
-                                <input type="password" name="password" id="password" placeholder="Password">
+                                <input type="password" name="apassword" id="password input" placeholder="Password">
                                 <i class="fas fa-lock"></i>
-                                <small id="alert-password"></small>
                             </label>
                         </div>
                         <div class="form-grid2">
                             <label for="name">
-                                <input type="text" name="name" id="fullname" placeholder="Full Name">
+                                <input type="text" name="fullname" id="name input" placeholder="Full Name">
                                 <i class="far fa-user"></i>
-                                <small id="alert-full-name"></small>
                             </label>
 
                             <label for="tel">
-                                <input type="tel" name="tel" id="number" placeholder="Mobile Number">
+                                <input type="tel" name="mobileno" id="tel input" placeholder="Mobile Number">
                                 <i class="fas fa-phone-square"></i>
-                                <small id="alert-numbers"></small>
                             </label>
 
                             <label for="con-password">
-                                <input type="password" name="password" id="confirm-password" input"
+                                <input type="password" name="cpassword" id="con-password" input"
                                     placeholder="Confirm Password">
                                 <i class="fas fa-lock"></i>
-                                <small id="alert-confirm-password"></small>
                             </label>
                         </div>
                     </div>
                     <div class="flex-btn">
                         <div class="signup">
                             <label for="signup">
-                                <button type="submit" name="signup" id="signup"><a
-                                        style="text-decoration:none;color:white;" href="landing.html">Sign Up</button>
+                                <button type="submit" name="signup" id="signup">Sign Up</button>
                                 <i class="fas fa-sign-in-alt"></i>
                             </label>
 

@@ -9,88 +9,66 @@
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <title>Omnitrix</title>
+    
+    <title>Login</title>
 </head>
+<header class="header">
+    <div class="logo">
+        <img class="logo"
+            src="https://res.cloudinary.com/hng-pre-internship/image/upload/v1568738419/Signup/Group_3_wtbfzg.png"
+            alt="logo">
+    </div>
+    <input type="checkbox" class="menu-btn" id="menu-btn">
+    <label for="menu-btn" class="menu-icon"> <span class="nav-icon"></span></label>
+</header>
 
 <body>
-    <div class="container-fluid">
-        <div class="row pt-3">
-            <div class="col-sm-12">
-                <img src="https://res.cloudinary.com/dmn1bwvq2/image/upload/v1568643060/Omnitrix_logo_zb0klo.png"
-                    alt="Omnitrix_logo_zb0klo">
+    <div class="container" id="container">
+        <div class="inner-container grid">
+            <div class="form-img-wrapper">
+                <img src=" https://res.cloudinary.com/hng-pre-internship/image/upload/v1568934415/login%20page/desktop_hz404i.png
+" alt="">
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 float-md-left text-centre">
-                        <img class="image"
-                            src="https://res.cloudinary.com/dmn1bwvq2/image/upload/v1568642992/Man_on_surfboard_laogbn.png"
-                            alt="">
-                    </div>
-                    <div class="col-sm-12 col-md-6 d-block float-md-right text-centre">
-                        <h3 class="login-txt">Login</h3>
-
-                        <small id="alert-incomplete"></small>
-                        <form action="" method="">
+            <div class="form-wrapper">
+                <h1 class="lead">Welcome Back</h1>
+                <span></span>
+                <form method="POST" action="login.php">
+                    <div class="form-grid">
+                        <div class="form-grid1">
                             <label for="username">
-                                <input type="text" name="username" id="username" placeholder="Username">
-                                <i class="fa fa-user"></i>
-                                <small id="alert-username"></small>
+                                <input type="text" name="username" id="username input" placeholder="Username">
+                                <i class="far fa-user"></i>
                             </label>
 
                             <label for="password">
-                                <input type="password" name="password" id="password" placeholder="Password">
-                                <i class="fas fa-user-lock"></i>
-                                <small id="alert-password"></small>
+                                <input type="password" name="password" id="password input" placeholder="Password">
+                                <i class="fas fa-lock"></i>
                             </label>
-                            </br>
-                            <label for="login">
-                                <button type="submit" name="login" id="login1" class="lead"><a
-                                        style="text-decoration:none;color:white;" href="landing.html">Login</button>
-                                <i class="fas fa-user-lock"></i>
-                            </label>
-                            <label for="signup">
-                                <button type="submit" name="sign_up" id="login1" class="lead submit"><a
-                                        style="text-decoration:none;color:white;" href="signup.html">Signup</button>
-                                <i class="fas fa-user-lock"></i>
-                            </label>
-                            <div>
-                                <p class="forgot">Forgot <a class="" href="#">Username/Password?</a></p>
-                            </div>
-
-
-                        </form>
+                        </div>
                     </div>
+                    <div class="flex-btn">
+                        <div class="login">
+                            <label for="login">
+                                <button type="submit" name="login" id="login">LOGIN</button>
+                                <i class="fas fa-sign-in-alt"></i>
+                            </label>
+
+                        </div>
+                </form>
+                <div id="prompt">
+                    <p>New to Omnitrix?<a class="forgot" href="signup.php">Sign Up</a></p>
                 </div>
             </div>
-
+            <!--THIS BUTTON IS JUST FOR DEMO. DELETE IT BEFORE SUBMISSION
+            <a href="landing.html">Demo Link to Welcome Page</a>
+            THIS BUTTON IS JUST FOR DEMO. DELETE IT BEFORE SUBMISSION END-->
         </div>
     </div>
-    <div class="row mb-0 copyright">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6 ">
-            <p> &copy 2019 Team Omnitrix. All rights reserved</p>
-        </div>
-        <div class="col-sm-3"></div>
+    <footer>&copy2019 <span class="blue">Team Omnitrix.</span> All Rights Reserved.</footer>
     </div>
-
-
-    <!--
-        </div> -->
-
-
-    <!--Login Form-->
-    <!-- <div class="form form-control">
-            <div class="lead">
-            </div>
-             </div>
-    </div> -->
-    <!--End Login Form-->
-
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

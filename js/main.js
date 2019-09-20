@@ -2,7 +2,7 @@ console.log("working");
 
 
 const input = document.querySelectorAll("input");
-const login = document.querySelector("#login1")
+const login = document.querySelector("login1")
 const username = document.getElementById('username')
 const password = document.getElementById('password')
 
@@ -86,7 +86,7 @@ login.addEventListener("click", event => {
         document.getElementById('alert-incomplete').innerHTML = 'Please complete the form';
     }
 
-    // else {
-    //     window.location.assign('landing.html')
-    // }
+     else {
+         window.location.assign('landing.html')
+     }
 })
