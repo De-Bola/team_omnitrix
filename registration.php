@@ -3,11 +3,11 @@ require_once "config.php";
 ob_start();
 session_start();
 
-$fullname=$_POST['fullname'];
-$email= $_POST['email'];
-$mobile= $_POST['mobileno'];
 $name= $_POST['username'];
+$email= $_POST['email'];
 $pass= $_POST['apassword'];
+$fullname=$_POST['fullname'];
+$mobile= $_POST['mobileno'];
 $pass2= $_POST['cpassword'];
 
 //mysql://b062478d1a3650:b001748f@us-cdbr-iron-east-02.cleardb.net/heroku_0c1823c70ba370e?reconnect=true
@@ -26,8 +26,8 @@ $num3= mysqli_num_rows($tel);
     if ($pass==$pass2 && $num==0 && $num2==0 && $num3==0)
     
     {
-       mysqli_query($con,("INSERT INTO user(fullname, email, mobileno, username, apassword, cpassword) VALUES 
-    ('$fullname', '$email', '$mobile', '$name','$pass','$pass2')"));
+       mysqli_query($con,("INSERT INTO user(username, email, apassword, fullname, mobileno, cpassword) VALUES 
+    ('$name','$email', '$pass', '$fullname', '$mobile', '$pass2')"));
          header('location:landing.html');
     }
          elseif ($num==1) {
