@@ -18,7 +18,7 @@ $user_pass = mysqli_query( $con,("SELECT * FROM heroku_0c1823c70ba370e.user WHER
 $check = mysqli_num_rows($user_pass);
 
 if($check ==1) {
-    header('Location:landing.php' );
+    header('Location:landing.html' );
 } else {
     //header(' Location:login.php ');
 
