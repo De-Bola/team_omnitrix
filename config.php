@@ -1,18 +1,16 @@
 <?php
-/* Database credentials. Assuming you are running MySQL
-server with default setting (user 'root' with no password) */
-//mysql://b062478d1a3650:b001748f@us-cdbr-iron-east-02.cleardb.net/heroku_0c1823c70ba370e?reconnect=true
-define('DB_SERVER', 'us-cdbr-iron-east-02.cleardb.net');
-define('DB_USERNAME', 'b062478d1a3650');
-define('DB_PASSWORD', 'b001748f');
-define('DB_NAME', 'heroku_0c1823c70ba370e');
-define('DB_DRIVER', 'mysqli');
- 
-/* Attempt to connect to MySQL database */
-$link = mysqli_connect('us-cdbr-iron-east-02.cleardb.net', 'b062478d1a3650', 'b001748f', 'heroku_0c1823c70ba370e');
- 
-// Check connection
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
+$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$servername = $cleardb_url["us-cdbr-iron-east-02.cleardb.net"];
+$username = $cleardb_url["b062478d1a3650"];
+$password = $cleardb_url["b001748f"];
+$dbname = $cleardb_url["heroku_0c1823c70ba370e"];
+
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+  // set the PDO error mode to exception
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  echo "Connected successfully";
+}catch(PDOException $e){
+  echo "Connection failed: " . $e->getMessage();
 }
 ?>
