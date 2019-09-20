@@ -3,7 +3,7 @@
 ob_start();
 session_start();
 
-$con= mysqli_connect('127.0.0.1', 'id10949330_b062478d1a3650', 'b001748f');
+$con= mysqli_connect('us-cdbr-iron-east-02.cleardb.net', 'b062478d1a3650', 'b001748f');
 mysqli_select_db( $con,'heroku_0c1823c70ba370e');
 
 if (!$con) { 
