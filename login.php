@@ -22,7 +22,8 @@ if($check ==1) {
 } else {
     //header(' Location:login.php ');
 
-    echo "Username Or Password Incorrect";
-}
+  $message6= "Username Or Password Incorrect";
+echo "<script type='text/javascript'>alert('$message6');</script>";
+ 
 mysqli_close($con);}
 ?> 
