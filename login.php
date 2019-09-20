@@ -11,7 +11,7 @@ if (!$con) {
 } 
 if(isset($_POST['login'])){
 $name= $_POST['username'];
-$pass= $_POST['password'];
+$pass= $_POST['apassword'];
 
 $user_pass = mysqli_query( $con,("SELECT * FROM heroku_0c1823c70ba370e.user WHERE username = '$name' and apassword = '$pass'"));
 
