@@ -20,8 +20,9 @@ $sql = $conn->query("SELECT * FROM user WHERE username = '$name' && apassword= '
                  
              
 }else{
-    $err = 'Username Or Password Incorrect';
+    $err = "Username Or Password Incorrect";
     
+echo "<script type='text/javascript'>alert('$err');</script>";
 }
 
 
