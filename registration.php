@@ -20,9 +20,9 @@ if (!$con) {
     die("Connection failed: " . mysqli_connect_error()); 
 } 
 
-$user = mysqli_query( $con,("SELECT * FROM user WHERE username = '$name'"));
-$mail = mysqli_query( $con,("SELECT * FROM user WHERE email = '$email'"));
-$tel = mysqli_query( $con,("SELECT * FROM user WHERE mobileno = '$mobile'"));
+$user = mysqli_query( $con,("SELECT * FROM heroku_0c1823c70ba370e.user WHERE username = '$name'"));
+$mail = mysqli_query( $con,("SELECT * FROM heroku_0c1823c70ba370e.user WHERE email = '$email'"));
+$tel = mysqli_query( $con,("SELECT * FROM heroku_0c1823c70ba370e.user WHERE mobileno = '$mobile'"));
 
 $num = mysqli_num_rows($user);
 $num2 = mysqli_num_rows($mail);
@@ -31,7 +31,7 @@ $num3= mysqli_num_rows($tel);
     if ($pass==$pass2 && $num==0 && $num2==0 && $num3==0)
     
     {
-       mysqli_query($con,("INSERT INTO user(username, email, apassword, fullname, mobileno, cpassword) VALUES 
+       mysqli_query($con,("INSERT INTO heroku_0c1823c70ba370e.user(username, email, apassword, fullname, mobileno, cpassword) VALUES 
     ('$name','$email', '$pass', '$fullname', '$mobile', '$pass2')"));
          header('location:landing.php');
     }
