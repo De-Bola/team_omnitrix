@@ -89,5 +89,4 @@ document.getElementById('number').onblur = () => {
     document.getElementById('alert-numbers').innerHTML = '';
     enableButton();
   }
->>>>>>> 2fc4b00fe2bd3e4382e724c9275dd969060ccae5
 }
