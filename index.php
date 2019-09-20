@@ -1,3 +1,6 @@
+<?php
+$err=""
+?>
 <!DOCTYPE html>
 <html lang="en">
 
