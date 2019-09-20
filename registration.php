@@ -14,7 +14,7 @@ $pass2= $_POST['cpassword'];
 //mysql://b062478d1a3650:b001748f@us-cdbr-iron-east-02.cleardb.net/heroku_0c1823c70ba370e?reconnect=true
 
 $con= mysqli_connect('us-cdbr-iron-east-02.cleardb.net', 'b062478d1a3650', 'b001748f');
-mysqli_select_db( $con,'omnitrix_data');
+mysqli_select_db( $con,'heroku_0c1823c70ba370e');
 
 if (!$con) { 
     die("Connection failed: " . mysqli_connect_error()); 
