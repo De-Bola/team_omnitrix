@@ -33,7 +33,7 @@ $num3= mysqli_num_rows($tel);
     {
        mysqli_query($con,("INSERT INTO heroku_0c1823c70ba370e.user(username, email, apassword, fullname, mobileno, cpassword) VALUES 
     ('$name','$email', '$pass', '$fullname', '$mobile', '$pass2')"));
-         header('location:landing.php');
+         header('location:landing.html');
     }
          elseif ($num==1) {
 
