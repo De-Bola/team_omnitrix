@@ -83,7 +83,7 @@ require_once "config.php";
                     </div>
                 </form>
                 <div id="prompt">
-                    <p>Have an account?<a class="forgot" href="index.php">Login</a></p>
+                    <p>Have an account?<a class="forgot" href="index.html">Login</a></p>
                 </div>
             </div>
         </div>
