@@ -3,12 +3,13 @@ require_once "config.php";
 ob_start();
 session_start();
 
-$con= mysqli_connect('localhost', 'root', '');
+//mysql://b062478d1a3650:b001748f@us-cdbr-iron-east-02.cleardb.net/heroku_0c1823c70ba370e?reconnect=true
 
-mysqli_select_db($con,'omnitrix_Userdata');
+$con= mysqli_connect('us-cdbr-iron-east-02.cleardb.net', 'b062478d1a3650', 'b001748f');
 
 $name= $_POST['username'];
-$pass= $_POST['password'];
+$pass= $_POST['apassword'];
+
 
 $sql = $conn->query("SELECT * FROM user WHERE username = '$name' && apassword= 'pass' ");
 
@@ -22,6 +23,7 @@ $sql = $conn->query("SELECT * FROM user WHERE username = '$name' && apassword= '
     $err = 'Username Or Password Incorrect';
     
 }
+
 
 // $user_pass = mysqli_query( $con, "SELECT * FROM user WHERE username = '$name' && apassword= 'pass'");
 
