@@ -7,10 +7,10 @@ session_start();
 ​
 $con= mysqli_connect('us-cdbr-iron-east-02.cleardb.net', 'b062478d1a3650', 'b001748f');​
 
-name= $_POST['username'];
+$name= $_POST['username'];
 $pass= $_POST['apassword'];
 
-$user_pass = mysqli_query( $con, "SELECT * FROM user WHERE username = '$name' && apassword= 'pass'");
+$user_pass = mysqli_query( $con, "SELECT * FROM user WHERE username = '$name' && apassword= '$pass'");
 
 $check = mysqli_num_rows($user_pass);
 
