@@ -89,7 +89,7 @@ require_once "config.php";
         </div>
         <footer>&copy2019 <span class="blue">Team Omnitrix.</span> All Rights Reserved.</footer>
     </div>
-    <script src="js/main.js"></script>
+    <script src="js/signup.js"></script>
 </body>
 
 </html>
